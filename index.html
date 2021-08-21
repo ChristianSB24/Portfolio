@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CS || Software Developer</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="favicon.ico">
+
+        <!-- Styling -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">    
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">   
+
+        <!-- HOSTED -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+        <script src="https://kit.fontawesome.com/bb2f811196.js" crossorigin="anonymous"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/tween.umd.js" integrity="sha512-lIKG1kC5TMb1Zx32vdz1n31YJMZRknVY20U9MJ28hD3y2c0OKN0Ce5NhJji78v8zX5UOSsm+MTBOcJt7yMBnSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!-- Local -->
+        <script src="js/main.js"></script>
+        <script src="js/sphereCanvas/controls/orbitControls.js" defer></script>
+        <script src="js/sphereCanvas/renderer/CSS3DRenderer.js" defer></script>
+    </head>
+    <body>
+      <section id="home" class="flex height-fix">
+          <canvas id="q"></canvas>
+          <div class="flex">
+            <div class="text">
+              <p>I am <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+            </div>
+  
+            <div class="button page-link" dest="portfolio">
+              Learn more
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+  
+          <nav class="flex">
+            <div class="link-wrap">
+              <div class="active page-link" dest="home">home</div>
+              <div class="page-link" dest="portfolio">portfolio</div>
+              <div class="page-link" dest="about">about</div>
+              <div class="page-link" dest="contact">contact</div>
+            </div>
+            <i class="fas fa-bars"></i>
+          </nav>
+      </section>
+
+      <section id="portfolio">
+        <div class="container-fluid">
+          <div class="header waypoint">
+            Portfolio
+          </div>
+          <div
+            class="header-bar waypoint"
+          ></div>
+
+          <div class="row">
+            <div class="feature-col col-lg-4 col-md-12 mb-5">
+              <i class="fas fa-mobile-alt fa-4x mb-3"></i>
+              <h3 class="feature-title">Responsive</h3>
+              <p class=feature-p>My layouts are compatible with any device size.</p>
+            </div>
+      
+            <div class="feature-col col-lg-4 col-md-12 mb-5">
+              <i class="far fa-gem fa-4x mb-3"></i>
+              <h3 class="feature-title">Innovative</h3>
+              <p class="feature-p">I am passionate about creating impactful user experiences.</p>
+            </div>
+      
+            <div class="feature-col col-lg-4 col-md-12 mb-5">
+              <i class="fas fa-plane-departure fa-4x mb-3"></i>
+              <h3 class="feature-title">Dynamic</h3>
+              <p class='feature-p'>I bring websites to life.</p>
+            </div>
+          </div>
+
+          <div class="row mt-5 gallery">
+            <div class="gallery-col col-lg-4 col-md-12 my-5">
+                  <div class="card mb-3"></div>
+                  <div class="text">
+                    <div class="bold mb-2">Twitter Clone</div>
+                    <span class="highlight">React JS / Django</span>
+                  </div>
+                  <a href="https://github.com/ChristianSB24/Twitter-Clone" class="portfolio-button"><i class="fab fa-github-square fa-3x"></i></a>
+                  <a href="https://infinite-escarpment-77268.herokuapp.com/" class="web-link">Visit Website</a>
+            </div>
+      
+            <div class="gallery-col col-lg-4 col-md-12 my-5">
+                <div>
+                  <div class="card mb-3"></div>
+                  <div class="text">
+                    <div class="bold mb-2">Learning Log</div>
+                    <span class="highlight">React JS / Django</span>
+                  </div>
+                    <a href="https://github.com/ChristianSB24/Learning-Log" class="portfolio-button"><i class="fab fa-github-square fa-3x"></i></a>
+                    <a href="https://learning-log-project2021.herokuapp.com/" class="web-link">Visit Website</a>
+                  </div>
+            </div>
+      
+            <div class="gallery-col col-lg-4 col-md-12 my-5">
+                <div>
+                  <div class="card mb-3"></div>
+                  <div class="text">
+                    <div class="bold mb-2">Crypto Dashboard</div>
+                    <span class="highlight">React JS / Redux</span>
+                  </div>
+                  <a href="https://github.com/ChristianSB24/Cryptocurrency-Dashboard" class="portfolio-button"><i class="fab fa-github-square fa-3x"></i></a>
+                  <a href="https://cryptocurrency-dashboard2.herokuapp.com/" class="web-link">Visit Website</a>
+                </div>
+        </div>
+      </section>
+
+
+      <section id="about">
+        <svg
+          preserveAspectRatio="none"
+          viewBox="0 0 100 102"
+          height="75"
+          width="100%"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          class="svgcolor-light"
+        >
+          <path d="M0 0 L50 100 L100 0 Z" fill="#eee" stroke="#eee"></path>
+        </svg>
+
+        <div class="container-flex">
+          <div class="header">
+            About
+          </div>
+          <div
+            class="header-bar"
+          ></div>
+          <div class="row">
+            <div class="about-me col-lg-6 mb-5">
+                <h1 class="about-subtitle">Who am I?</h1>
+                <p class="about-paragraph">I am a self-taught developer with my primary interest being in full-stack development. 
+                  My passion for programming began when I started reading the Python Crash Course by Eric Matthis. 
+                  I loved being able to create unique experiences and solve real problems. <br> <br>
+
+                  Through books, courses, and projects I have gained experience in various programming technologies. 
+                  My main technology stack is Django, ReactJS, Redux, and PostgreSQL, but also have experience with jQuery, NodeJS and MongoDB.
+                </p>
+                <p class="resume-link">View my resume: <a href="Resume.pdf" download="CSaldanaResume"><i class="fas fa-file-pdf"></i></a></p>
+ 
+            </div>
+            <div id="container" class="col-lg-6"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container flex">
+          <div class="header">
+            CONTACT
+          </div>
+          <div
+          class="header-bar"
+        ></div>
+          <div
+            class="highlight mt-4">Want to reach out?</div>
+          <form
+            id="my-form"
+            action="https://formspree.io/f/mwkawryy"
+            method="POST"
+          >
+            <input placeholder="Name" type="text" name="name" required />
+            <input
+              placeholder="Enter email"
+              type="email"
+              name="email"
+              required
+            />
+            <textarea
+              placeholder="Your Message"
+              type="text"
+              name="message"
+            ></textarea>
+            <input class="button" type="submit" id="form-button" value="SUBMIT" />
+            <p id="my-form-status"></p>
+          </form>
+        </div>
+      </section>
+
+      <footer>
+        <i class="fas fa-arrow-up page-link fa-2x" dest="home"></i>
+
+        <div class="icon-wrap flex row">
+          <a href="https://www.linkedin.com/in/christian-saldana-b90b6610a/">
+            <div class="flex icon" id="icon-2">
+              <i class="fab fa-linkedin fa-1x"></i>
+            </div>
+          </a>
+          <a href="https://github.com/ChristianSB24">
+            <div class="flex icon" id="icon-3">
+              <i class="fab fa-github-square fa-1x"></i>
+            </div>
+          </a>
+          <a href="https://codepen.io/christiansb24">
+            <div class="flex icon" id="icon-4">
+              <i class="fab fa-codepen"></i>
+            </div>
+          </a>
+        </div>
+        <div class="info-box">
+          <div class="footnote">
+            Christian Saldana <span class="highlight">&copy;2021</span>
+          </div>
+        </div>
+      </footer>
+        
+        <script src="js/canvas.js" defer></script>
+        <script src="js/typing.js" defer></script>
+        <script src="js/sphereCanvas/main.js" defer></script>
+    </body>
+</html>
